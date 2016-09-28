@@ -1,0 +1,16 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+Vagrant.configure("2") do |config|
+  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+  config.vm.provision "shell", path: "agent.sh" 
+  config.vm.define "zabbixagent" do |zabbixagent|
+    zabbixagent.vm.box = "centos/6"
+    zabbixagent.vm.hostname = "zabbixagent.server.com"
+    zabbixagent.vm.network "private_network", ip: "192.168.33.26"
+    zabbixagent.vm.provider "virtualbox" do |cfg|
+      cfg.name = "zabbixagent-cfg"
+      cfg.cpus = 1
+      cfg.memory = 3128
+    end
+  end
+end
