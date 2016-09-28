@@ -1,2 +1,2 @@
-### Zabbix lab task 1
-Puppet + zabbix-server + zabbix-agent 
+### Zabbix lab task 2
+zabbix-server + zabbix-agent+screenshots 
