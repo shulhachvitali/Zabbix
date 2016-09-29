@@ -3,7 +3,7 @@ Puppet + zabbix-server + zabbix-agent
 
 ##The schema is:
 
-1.During creating virtual machine vagrant starts two provision steps:
+1. During creating virtual machine vagrant starts two provision steps:
 
 First - is to start [bash script](sc.sh), which installs epel repository, repository for zabbix (I could not activate it via puppet), updates yum, installs puppet and writes hosts addresses into hosts file.
 
