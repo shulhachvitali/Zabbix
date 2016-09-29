@@ -1,0 +1,5 @@
+# PAth: /etc/syscofig/tomcat
+#tomcat was installed via yum
+JAVA_OPTS="-Djava.rmi.server.hostname=192.168.33.26 -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=12345 -Dcom.sun.management.jmxremote.local.only=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false"
+
+
